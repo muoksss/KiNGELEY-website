@@ -178,12 +178,12 @@ function Portfolio() {
       <Flex>
         <Heading> Creative Design</Heading>
       </Flex>
-      <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} spacing={20}>
+      <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={20}>
         {creative.map((data, index) => {
           return (
             <MotionBox
               key={index}
-              initial={{ opacity: 0, translateX: index % 2 === 0 ? -50 : 50 }}
+              initial={{ opacity: 0, translateX:-50  }}
               animate={{ opacity: 1, translateX: 0 }}
               transition={{ duration: 0.3, delay: index * 0.4 }}
             >
@@ -201,7 +201,7 @@ function Portfolio() {
       <Flex>
         <Heading> Brand Strategy</Heading>
       </Flex>
-      <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} spacing={20}>
+      <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={20}>
         {strategy.map((data, index) => {
           return (
             <MotionBox
@@ -224,7 +224,7 @@ function Portfolio() {
       <Flex>
         <Heading>Event Management</Heading>
       </Flex>
-      <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} spacing={20}>
+      <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={20}>
         {event.map((data, index) => {
           return (
             <MotionBox
@@ -247,7 +247,7 @@ function Portfolio() {
       <Flex>
         <Heading>Digital</Heading>
       </Flex>
-      <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} spacing={20}>
+      <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={20}>
         {Digital.map((data, index) => {
           return (
             <MotionBox
@@ -270,7 +270,7 @@ function Portfolio() {
       <Flex>
         <Heading>Branding</Heading>
       </Flex>
-      <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} spacing={20}>
+      <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={20}>
         {Branding.map((data, index) => {
           return (
             <MotionBox

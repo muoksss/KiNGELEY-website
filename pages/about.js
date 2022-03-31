@@ -187,7 +187,7 @@ function VCard({title, stat, color,}) {
       border={'1px solid'}
       borderColor={useColorModeValue('gray.800', 'gray.500')}
       rounded={'lg'}
-      bg={useColorModeValue("#24AAB2","yellow.500")}
+      bg={color}
       
       
       >
@@ -213,10 +213,10 @@ function Values() {
       </Heading>
       <SimpleGrid columns={2} spacingX='40px' spacingY='20px'>
       
-      <VCard title={'Creativity and Professionalism'} stat={'In our designs & implementation'} />
-      <VCard title={'Commitment & Loyalty'} stat={'To our clients'} />
-      <VCard title={'Reliability & Availability'} stat={'In our communication'} />
-      <VCard title={'Quality & integrity'} stat={'In everything we do'} />
+      <VCard color={'#FF6565'} title={'Creativity and Professionalism'} stat={'In our designs & implementation'} />
+      <VCard color={'#24AAB2'}title={'Commitment & Loyalty'} stat={'To our clients'} />
+      <VCard color={'#FDBC4A'}title={'Reliability & Availability'} stat={'In our communication'} />
+      <VCard color={'#FFFFFF'}title={'Quality & integrity'} stat={'In everything we do'} />
      
       </SimpleGrid>
     </Box>
